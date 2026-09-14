@@ -1,18 +1,21 @@
-# ChatBotFE
+# SeshatAIFE
 
-Frontend submodule for the ChatBot fullstack application. Handles the user interface and performs API calls towards the backend service ([ChatBotBE](https://github.com/Adrian55Stack/ChatBotBE)).
+Frontend submodule for the SeshatAI fullstack application. Handles the user interface, UI translation, and performs API calls towards the backend service ([SeshatAIBE](https://github.com/Adrian55Stack/SeshatAIBE)).
 
 ## Tech Stack
 
 - **Framework:** Angular 19
 - **Testing:** Jest
 - **Linting:** ESLint
+- **Code Quality:** SonarQube
+- **Translation:** i18n / translation API
 
 ## Getting Started
 
 ### Prerequisites
 - Node.js >= 18
 - npm >= 9
+- A valid translation API key
 
 ### Installation
 ```bash
@@ -40,7 +43,16 @@ npm test
 npm run lint
 ```
 
+## Code Quality
+
+This project uses SonarQube for static code analysis. Configuration is defined in `sonar-project.properties`.
+
+To run an analysis locally:
+```bash
+sonar-scanner
+```
+
 ## Related
 
-- [ChatBotBE](https://github.com/Adrian55Stack/ChatBotBE) — Backend submodule
-- [ChatBotRxjs](https://github.com/Adrian55Stack/ChatBotRxjs) — Monorepo
+- [SeshatAIBE](https://github.com/Adrian55Stack/SeshatAIBE) — Backend submodule
+- [SeshatAI](https://github.com/Adrian55Stack/SeshatAI) — Monorepo
